@@ -1,0 +1,11 @@
+{
+    "name": "AppLayoutVue",
+    "alias": "applayoutvue",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AppLayoutVue\\Providers\\AppLayoutVueServiceProvider"
+    ],
+    "files": []
+}

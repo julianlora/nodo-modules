@@ -1,0 +1,82 @@
+.applayoutvue-shell {
+    min-height: 100vh;
+    background: linear-gradient(
+        180deg,
+        #0f172a 0%,
+        #111827 45%,
+        #f8fafc 45%,
+        #f8fafc 100%
+    );
+    color: #0f172a;
+}
+
+.applayoutvue-frame {
+    width: min(1100px, calc(100% - 3rem));
+    margin: 0 auto;
+    padding: 2rem 0 3rem;
+}
+
+.applayoutvue-banner {
+    margin-bottom: 1.5rem;
+}
+
+.applayoutvue-card {
+    border-radius: 24px;
+    background: rgba(15, 23, 42, 0.88);
+    color: #e2e8f0;
+    padding: 2rem;
+    box-shadow: 0 30px 80px rgba(15, 23, 42, 0.22);
+}
+
+.applayoutvue-kicker {
+    margin: 0 0 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #38bdf8;
+}
+
+.applayoutvue-title {
+    margin: 0;
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    line-height: 1;
+}
+
+.applayoutvue-subtitle {
+    margin: 1rem 0 0;
+    max-width: 44rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+.applayoutvue-content {
+    border-radius: 24px;
+    background: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 25px 70px rgba(15, 23, 42, 0.12);
+}
+
+.applayoutvue-content h1 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.applayoutvue-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #475569;
+}
+
+@media (max-width: 640px) {
+    .applayoutvue-frame {
+        width: min(100% - 1.5rem, 1100px);
+        padding-top: 1rem;
+    }
+
+    .applayoutvue-card,
+    .applayoutvue-content {
+        padding: 1.5rem;
+    }
+}
