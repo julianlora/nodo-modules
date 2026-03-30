@@ -4,15 +4,22 @@ namespace Modules\Home\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Modules\Product\Services\ProductService;
 
 class HomeController extends Controller
 {
+    public function __construct(
+        protected ProductService $productService,
+    ) {
+    }
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('home::index');
+        $products = $this->productService->all();
+        return view('home::index', compact('products'));
     }
 
     /**
